@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class Parser {
-    private static final Pattern HEADER = Pattern.compile("\\A//(.)\\r?\\n");
+    private static final Pattern HEADER = Pattern.compile("\\A//(.)\\\\n");
 
     public List<Integer> parseInput(String input) throws IllegalArgumentException {
         String body = input;
